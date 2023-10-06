@@ -1,35 +1,220 @@
-<html>
-	<style>
-		h2 {
-    left: 0;
-    line-height: 200px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-	color: white;
-		}
-		h1 {
-    left: 0;
-    line-height: 300px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-	color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>MANIYAR</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://github.com/MkMOHINUDDIN" class="link">MANIYAR</a>
+      </h3>
 
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
 
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h2>Hi, I am <span class="about__name">Maniyar Khaja Mohinuddin</span></h2>
+        <h2 class="about__role">A Software Engineer.</h2>
+        <p class="about__desc">
+            I am a self-taught programmer with a strong commitment to lifelong learning. 
+            Proficient in Python and web development, I excel at translating business 
+            requirements into effective technical solutions. I am eager to kickstart my 
+            career with a renowned tech-driven company.<br>
+            <br>
+            • Furthermore, I bring practical experience from my time working with an international
+             organization, where I successfully organized numerous events. Additionally, I have 
+             real-time technical expertise, having completed a freelancing project for a construction company. 
+             These experiences have further honed my skills and prepared me for the challenges of the professional world.
+        </p>
 
-	</style>
-	<body bgcolor="black">
+        <div class="about__contact center">
+          <a
+            href="https://drive.google.com/file/d/1vtqC3LoM90quJM8teoENzRHxGA1YKlF7/view?usp=drive_link"
+            target="_blank"
+          >
+            <span class="btn btn--outline">Resume</span>
+          </a>
 
-		
-		<h2 style="text-align: center;">Portfolio Is Being Upgraded : kindly Visit Later....</h2>
-		<h1 style="text-align: center;">for any queries contact: <a href="mailto:maniyarmohinuddin@gmail.com">maniyarmohinuddin@gmail.com</a></h1>
-	</body>
+          <a
+            href="https://github.com/MkMOHINUDDIN"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/maniyar-khaja-mohinuddin/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Placement Updates Site</h3>
+            <p class="project__description">
+                • I designed a user-friendly website for job updates. It enables effortless addition and
+                removal of job information, securely storing data in the cloud. The site offers an intuitive
+                interface for easy navigation and accessibility. 
+            </p>
+            <p></p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">FLASK</li>
+              <li class="project__stack-item">BOOTSTRAP</li>
+              <li class="project__stack-item">HTML / CSS / JS</li>
+            </ul>
+
+            <a
+              href="https://github.com/MkMOHINUDDIN/latest-job-updates"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Weather Prediction</h3>
+            <p class="project__description">
+                I designed a weather prediction app that accurately forecasts rain.
+                • Its user-friendly interface ensures reliable predictions, simplifying the process
+                for users seeking accurate weather information
+              
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">HTML / CSS / JS</li>
+            </ul>
+
+            <a
+              href="https://github.com/MkMOHINUDDIN/Weather-prediction-using-Logistic-Regression"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+
+          <div class="project">
+            <h3>University Chatter Bot</h3>
+            <p class="project__description">
+                I have created a university chatbot with an interactive user-friendly interface that allows students to remotely access information about their college, including details about courses, campus life, and placement opportunities. This chatbot serves as a helpful resource for students to resolve their queries and make informed decisions about their academic journey..
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Machine Learning</li>
+              <li class="project__stack-item">FLASK</li>
+              <li class="project__stack-item">HTML / CSS / JS</li>
+            </ul>
+
+            <a
+              href="https://github.com/M-KHAJA-MOHINUDDIN/smart-college-enquiry-chat-bot-using-python-and-machine-learning-"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">MYSQL</li>
+          <li class="skills__list-item btn btn--plain">FLASK</li>
+          <li class="skills__list-item btn btn--plain">LINUX</li>
+          <li class="skills__list-item btn btn--plain">MS-Office 356</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">API</li>
+          <li class="skills__list-item btn btn--plain">C / C++</li>
+          <li class="skills__list-item btn btn--plain">Script Writing</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:maniyarmohinuddin@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/MkMOHINUDDIN" class="link footer__link">
+        @Maniyar Mohinuddin
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
